@@ -1,0 +1,7 @@
+bin
+obj
+Data/TCL_Data*.xls
+Data/*.txt
+App.config
+cache.dat
+.vscode
