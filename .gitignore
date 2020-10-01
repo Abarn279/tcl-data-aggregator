@@ -1,7 +1,7 @@
 bin
 obj
 Data/TCL_Data*.xls
-Data/*.txt
+Data/Fun_Stats.txt
 App.config
 cache.dat
 .vscode
