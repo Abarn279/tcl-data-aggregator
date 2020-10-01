@@ -1,0 +1,501 @@
+KDA Player (Highest Average Game KDA):
+sandysnake: 9.916666666666668
+cntrl: 8.979487179487178
+loosive: 8.317948717948717
+toastytg: 7.639743589743589
+mønkeÿ: 7.294871794871796
+abarn: 7.156410256410258
+swordm45t3r: 6.097041847041847
+musicx: 6.050992063492063
+spiritoffate: 5.796794871794872
+rookstout: 5.553846153846155
+aibox: 5.497222222222223
+droid08: 5.423412698412698
+khaosstorm: 5.323260073260073
+devyous: 5.153333333333334
+dudemandingo: 4.975
+1mtinyrick: 4.315384615384615
+tokémonpanda: 4.2243589743589745
+illtakemid: 3.77037037037037
+dbrann68: 3.6640476190476194
+titaniumskull: 3.505111555111555
+hippogriff: 3.4461538461538463
+sirstew: 3.267460317460318
+lemonilla: 3.257738095238095
+espynn: 2.9547619047619045
+bludbathnbeyond: 2.670695970695971
+sunnydeadeye: 2.213900913900914
+corridian: 2.060229276895944
+iostinthesauce: 2.0166666666666666
+bushleague: 1.8277777777777782
+darkdeitylink: 1.2438271604938271
+
+(NOT) KDA Player (Lowest Average Game KDA):
+darkdeitylink: 1.2438271604938271
+bushleague: 1.8277777777777782
+iostinthesauce: 2.0166666666666666
+corridian: 2.060229276895944
+sunnydeadeye: 2.213900913900914
+bludbathnbeyond: 2.670695970695971
+espynn: 2.9547619047619045
+lemonilla: 3.257738095238095
+sirstew: 3.267460317460318
+hippogriff: 3.4461538461538463
+titaniumskull: 3.505111555111555
+dbrann68: 3.6640476190476194
+illtakemid: 3.77037037037037
+tokémonpanda: 4.2243589743589745
+1mtinyrick: 4.315384615384615
+dudemandingo: 4.975
+devyous: 5.153333333333334
+khaosstorm: 5.323260073260073
+droid08: 5.423412698412698
+aibox: 5.497222222222223
+rookstout: 5.553846153846155
+spiritoffate: 5.796794871794872
+musicx: 6.050992063492063
+swordm45t3r: 6.097041847041847
+abarn: 7.156410256410258
+mønkeÿ: 7.294871794871796
+toastytg: 7.639743589743589
+loosive: 8.317948717948717
+cntrl: 8.979487179487178
+sandysnake: 9.916666666666668
+
+Paddin' the stats (Highest Average DMG per minute):
+bludbathnbeyond: 842.2879820206253
+cntrl: 836.1972435113407
+abarn: 785.8643638922268
+sandysnake: 759.9994628602803
+aibox: 676.3713859648667
+toastytg: 674.3156775842942
+1mtinyrick: 662.2797709310734
+illtakemid: 650.8572328407764
+loosive: 641.2179564818748
+khaosstorm: 602.6065031979973
+musicx: 560.4083242892383
+hippogriff: 530.128654296474
+darkdeitylink: 508.93034341715224
+iostinthesauce: 487.1058849203381
+corridian: 485.2088656570496
+tokémonpanda: 435.93785319396727
+devyous: 432.25538485954513
+sirstew: 394.6062727452904
+bushleague: 358.98813184502103
+rookstout: 337.466949749606
+swordm45t3r: 299.13070703181563
+mønkeÿ: 298.0044232243221
+sunnydeadeye: 294.5667571639678
+spiritoffate: 256.5938617195145
+dudemandingo: 246.1469361808318
+titaniumskull: 232.63301313632093
+dbrann68: 229.5135502195964
+droid08: 214.50134942642572
+espynn: 200.68137984552428
+lemonilla: 167.67631523092209
+
+Minion Slayer (Highest Average CS per minute):
+cntrl: 7.130230515355387
+bludbathnbeyond: 7.079814364138402
+khaosstorm: 6.860176013048032
+sandysnake: 6.788422493758711
+loosive: 6.484414413333986
+abarn: 6.464573294721898
+toastytg: 6.453760921916427
+hippogriff: 6.427791123622092
+aibox: 6.287195635382695
+illtakemid: 6.170878121934241
+musicx: 6.000665865616391
+devyous: 5.791392453862125
+iostinthesauce: 5.7278739651762685
+tokémonpanda: 5.5846672695199295
+sirstew: 5.5334126429293065
+1mtinyrick: 5.240756486663416
+darkdeitylink: 5.0320805348556545
+corridian: 4.133437632404723
+sunnydeadeye: 1.9714022000233855
+bushleague: 0.9820911256361353
+dudemandingo: 0.9738408943196215
+rookstout: 0.904967753764251
+mønkeÿ: 0.9003899602254107
+dbrann68: 0.8969410104609862
+droid08: 0.852369402215039
+espynn: 0.8198019447691571
+spiritoffate: 0.8157678106769624
+lemonilla: 0.7587736769811168
+swordm45t3r: 0.7256544609334896
+titaniumskull: 0.5816713558570149
+
+Money on my mind, mind on my money (Highest Average Gold per minute):
+cntrl: 424.63448790923786
+bludbathnbeyond: 423.0835667798611
+abarn: 422.78132733139375
+loosive: 422.6043433451448
+toastytg: 407.56673943644756
+khaosstorm: 403.0570885063656
+aibox: 395.93255043606723
+illtakemid: 392.1819820729774
+sandysnake: 387.46845626079323
+hippogriff: 378.88119896523585
+musicx: 369.4427222101415
+rookstout: 345.6477545660695
+iostinthesauce: 336.49372623910995
+corridian: 336.392962403782
+sirstew: 334.5840447422701
+tokémonpanda: 332.5097336831771
+devyous: 331.5984252808455
+1mtinyrick: 323.1324388064546
+swordm45t3r: 317.73693150077935
+darkdeitylink: 308.12239586545064
+espynn: 307.62552088751784
+sunnydeadeye: 306.6887523435525
+titaniumskull: 300.5632604598858
+dbrann68: 277.52461295836144
+mønkeÿ: 266.3769359106617
+dudemandingo: 259.7823286091125
+spiritoffate: 246.81667376259412
+bushleague: 241.97079792281727
+droid08: 235.60979775992442
+lemonilla: 227.68880377879321
+
+Can't touch my carries (Highest average time spent CCing others per minute):
+cntrl: 11.607863010998955
+tokémonpanda: 11.489949592615691
+espynn: 11.376428836871819
+rookstout: 11.297351284513262
+corridian: 10.582417128624089
+dbrann68: 10.407404462827555
+swordm45t3r: 10.169224065104348
+titaniumskull: 10.141247315433151
+sirstew: 9.146119070521701
+sandysnake: 8.985657330646378
+illtakemid: 8.809552751591461
+musicx: 8.021655084828952
+sunnydeadeye: 7.827921332487605
+bludbathnbeyond: 7.717396016768537
+khaosstorm: 6.659482543061007
+1mtinyrick: 6.625245209174739
+loosive: 6.502271006398176
+darkdeitylink: 6.338260376581147
+abarn: 6.210387099869862
+iostinthesauce: 6.144762339962409
+hippogriff: 5.841610974167206
+bushleague: 5.177144534107655
+droid08: 4.573686818124976
+dudemandingo: 4.447202051523111
+aibox: 4.300426301186214
+spiritoffate: 4.245364196460091
+devyous: 4.152216832142769
+mønkeÿ: 3.8325562193647573
+toastytg: 3.80283655679816
+lemonilla: 3.5650281844891616
+
+Bloodthirsty (Most first bloods):
+iostinthesauce: 3
+khaosstorm: 3
+hippogriff: 3
+espynn: 3
+mønkeÿ: 2
+corridian: 2
+loosive: 2
+dudemandingo: 2
+bludbathnbeyond: 2
+sandysnake: 1
+devyous: 1
+sirstew: 1
+swordm45t3r: 1
+musicx: 1
+tokémonpanda: 1
+titaniumskull: 1
+cntrl: 1
+sunnydeadeye: 1
+rookstout: 1
+abarn: 1
+toastytg: 1
+spiritoffate: 1
+dbrann68: 0
+lemonilla: 0
+aibox: 0
+droid08: 0
+darkdeitylink: 0
+illtakemid: 0
+bushleague: 0
+1mtinyrick: 0
+
+Champion Slayer (Most total kills):
+cntrl: 90
+bludbathnbeyond: 88
+abarn: 87
+toastytg: 87
+khaosstorm: 85
+loosive: 81
+aibox: 79
+illtakemid: 64
+musicx: 60
+sandysnake: 54
+1mtinyrick: 50
+hippogriff: 49
+iostinthesauce: 43
+devyous: 41
+rookstout: 41
+sirstew: 40
+corridian: 37
+tokémonpanda: 36
+swordm45t3r: 31
+espynn: 31
+mønkeÿ: 30
+darkdeitylink: 28
+sunnydeadeye: 28
+dudemandingo: 26
+dbrann68: 22
+titaniumskull: 21
+spiritoffate: 20
+bushleague: 19
+droid08: 10
+lemonilla: 9
+
+Inter (Most total deaths):
+bludbathnbeyond: 71
+darkdeitylink: 69
+titaniumskull: 62
+bushleague: 62
+espynn: 62
+swordm45t3r: 55
+sunnydeadeye: 54
+hippogriff: 54
+dudemandingo: 50
+spiritoffate: 49
+rookstout: 48
+dbrann68: 47
+lemonilla: 47
+tokémonpanda: 47
+sirstew: 46
+musicx: 46
+iostinthesauce: 45
+corridian: 45
+1mtinyrick: 44
+khaosstorm: 42
+illtakemid: 40
+aibox: 39
+mønkeÿ: 39
+toastytg: 39
+droid08: 38
+abarn: 37
+cntrl: 34
+devyous: 30
+loosive: 29
+sandysnake: 20
+
+Least fun player (Least total deaths):
+sandysnake: 20
+loosive: 29
+devyous: 30
+cntrl: 34
+abarn: 37
+droid08: 38
+aibox: 39
+mønkeÿ: 39
+toastytg: 39
+illtakemid: 40
+khaosstorm: 42
+1mtinyrick: 44
+iostinthesauce: 45
+corridian: 45
+sirstew: 46
+musicx: 46
+dbrann68: 47
+lemonilla: 47
+tokémonpanda: 47
+rookstout: 48
+spiritoffate: 49
+dudemandingo: 50
+sunnydeadeye: 54
+hippogriff: 54
+swordm45t3r: 55
+titaniumskull: 62
+bushleague: 62
+espynn: 62
+darkdeitylink: 69
+bludbathnbeyond: 71
+
+Playmaker (Most Multikills):
+cntrl: 20
+khaosstorm: 16
+toastytg: 16
+abarn: 15
+loosive: 15
+bludbathnbeyond: 14
+aibox: 12
+hippogriff: 10
+musicx: 9
+illtakemid: 8
+devyous: 7
+1mtinyrick: 7
+sandysnake: 5
+iostinthesauce: 3
+sirstew: 3
+rookstout: 3
+darkdeitylink: 2
+corridian: 2
+espynn: 2
+dbrann68: 1
+swordm45t3r: 1
+tokémonpanda: 1
+sunnydeadeye: 1
+bushleague: 1
+spiritoffate: 1
+lemonilla: 0
+droid08: 0
+titaniumskull: 0
+mønkeÿ: 0
+dudemandingo: 0
+
+200 Years (Champion with highest winrate and at least 5 games):
+Soraka: 90%, 10 Games
+Trundle: 83.33333333333334%, 6 Games
+Azir: 80%, 5 Games
+Shen: 76.92307692307693%, 13 Games
+Karma: 75%, 8 Games
+Ashe: 71.42857142857143%, 7 Games
+Orianna: 66.66666666666666%, 6 Games
+Sivir: 66.66666666666666%, 6 Games
+Lulu: 66.66666666666666%, 6 Games
+Sejuani: 65%, 20 Games
+Sett: 60%, 5 Games
+Darius: 60%, 5 Games
+MissFortune: 57.14285714285714%, 7 Games
+Morgana: 53.84615384615385%, 13 Games
+Ziggs: 53.84615384615385%, 13 Games
+Ezreal: 50%, 12 Games
+Caitlyn: 41.66666666666667%, 12 Games
+Mordekaiser: 40%, 5 Games
+Zac: 40%, 5 Games
+Brand: 40%, 5 Games
+Nautilus: 33.33333333333333%, 9 Games
+Amumu: 30%, 10 Games
+Maokai: 20%, 5 Games
+Urgot: 16.666666666666664%, 6 Games
+Janna: 16.666666666666664%, 6 Games
+
+Dog Champ (Champion with lowest winrate and at least 5 games):
+Urgot: 16.666666666666664%, 6 Games
+Janna: 16.666666666666664%, 6 Games
+Maokai: 20%, 5 Games
+Amumu: 30%, 10 Games
+Nautilus: 33.33333333333333%, 9 Games
+Mordekaiser: 40%, 5 Games
+Zac: 40%, 5 Games
+Brand: 40%, 5 Games
+Caitlyn: 41.66666666666667%, 12 Games
+Ezreal: 50%, 12 Games
+Morgana: 53.84615384615385%, 13 Games
+Ziggs: 53.84615384615385%, 13 Games
+MissFortune: 57.14285714285714%, 7 Games
+Sett: 60%, 5 Games
+Darius: 60%, 5 Games
+Sejuani: 65%, 20 Games
+Orianna: 66.66666666666666%, 6 Games
+Sivir: 66.66666666666666%, 6 Games
+Lulu: 66.66666666666666%, 6 Games
+Ashe: 71.42857142857143%, 7 Games
+Karma: 75%, 8 Games
+Shen: 76.92307692307693%, 13 Games
+Azir: 80%, 5 Games
+Trundle: 83.33333333333334%, 6 Games
+Soraka: 90%, 10 Games
+
+Comfort champs (Highest pickrate):
+Sejuani: 57.14285714285714%, 20 Games
+Morgana: 37.142857142857146%, 13 Games
+Ziggs: 37.142857142857146%, 13 Games
+Shen: 37.142857142857146%, 13 Games
+Caitlyn: 34.285714285714285%, 12 Games
+Ezreal: 34.285714285714285%, 12 Games
+Amumu: 28.57142857142857%, 10 Games
+Soraka: 28.57142857142857%, 10 Games
+Nautilus: 25.71428571428571%, 9 Games
+Karma: 22.857142857142858%, 8 Games
+MissFortune: 20%, 7 Games
+Ashe: 20%, 7 Games
+Urgot: 17.142857142857142%, 6 Games
+Orianna: 17.142857142857142%, 6 Games
+Janna: 17.142857142857142%, 6 Games
+Sivir: 17.142857142857142%, 6 Games
+Lulu: 17.142857142857142%, 6 Games
+Trundle: 17.142857142857142%, 6 Games
+Mordekaiser: 14.285714285714285%, 5 Games
+Sett: 14.285714285714285%, 5 Games
+Maokai: 14.285714285714285%, 5 Games
+Darius: 14.285714285714285%, 5 Games
+Azir: 14.285714285714285%, 5 Games
+Zac: 14.285714285714285%, 5 Games
+Brand: 14.285714285714285%, 5 Games
+Kaisa: 11.428571428571429%, 4 Games
+Ornn: 11.428571428571429%, 4 Games
+Nunu: 11.428571428571429%, 4 Games
+Fiora: 11.428571428571429%, 4 Games
+JarvanIV: 11.428571428571429%, 4 Games
+
+Get out of my game (Highest banrate):
+Caitlyn: 62.857142857142854%, 22 Games
+Ezreal: 42.857142857142854%, 15 Games
+Lulu: 40%, 14 Games
+Darius: 37.142857142857146%, 13 Games
+Zac: 34.285714285714285%, 12 Games
+Urgot: 34.285714285714285%, 12 Games
+Ashe: 34.285714285714285%, 12 Games
+Orianna: 34.285714285714285%, 12 Games
+Morgana: 34.285714285714285%, 12 Games
+Shen: 31.428571428571427%, 11 Games
+Veigar: 25.71428571428571%, 9 Games
+Aphelios: 25.71428571428571%, 9 Games
+JarvanIV: 22.857142857142858%, 8 Games
+Fiora: 22.857142857142858%, 8 Games
+Nautilus: 20%, 7 Games
+Irelia: 20%, 7 Games
+Sett: 20%, 7 Games
+Ziggs: 20%, 7 Games
+Leona: 20%, 7 Games
+Ekko: 17.142857142857142%, 6 Games
+Yone: 17.142857142857142%, 6 Games
+Akali: 17.142857142857142%, 6 Games
+Vi: 17.142857142857142%, 6 Games
+Nunu: 17.142857142857142%, 6 Games
+Malzahar: 14.285714285714285%, 5 Games
+Ornn: 14.285714285714285%, 5 Games
+Mordekaiser: 14.285714285714285%, 5 Games
+Corki: 11.428571428571429%, 4 Games
+Cassiopeia: 11.428571428571429%, 4 Games
+Viktor: 11.428571428571429%, 4 Games
+
+Pocket picks (Champs picked once):
+Akali: abarn
+Anivia: abarn
+Blitzcrank: droid08
+Diana: illtakemid
+Elise: corridian
+Evelynn: lemonilla
+Fizz: illtakemid
+Gangplank: corridian
+Heimerdinger: aibox
+Illaoi: bludbathnbeyond
+Jayce: musicx
+Kassadin: cntrl
+Kayn: swordm45t3r
+Khazix: rookstout
+Kled: iostinthesauce
+LeeSin: corridian
+Lissandra: 1mtinyrick
+Malphite: darkdeitylink
+Neeko: illtakemid
+Pantheon: dudemandingo
+Qiyana: aibox
+Rammus: dbrann68
+Riven: corridian
+Sylas: corridian
+Varus: musicx
+Viktor: cntrl
+Vladimir: bludbathnbeyond
+Warwick: sunnydeadeye
+Zilean: sandysnake
+
