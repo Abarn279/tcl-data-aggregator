@@ -265,24 +265,6 @@ public class WorkbookService
 
         return md;
     }
-
-    public T Retry<T>(Func<T> func, int tries)
-    {
-        Exception exception = null;
-        for (var i = 0; i < tries; i++)
-        {
-            try
-            {
-                return func();
-            }
-            catch (Exception e)
-            {
-                exception = e;
-            }
-        }
-
-        throw exception;
-    }
 }
 
 public static class BoolExtensions

@@ -125,7 +125,7 @@ namespace DataPuller
             return pgrs;
         }
 
-        public async Task<T> Retry<T>(Func<Task<T>> func, int tries)
+        private async Task<T> Retry<T>(Func<Task<T>> func, int tries)
         {
             Exception exception = null;
             for (var i = 0; i < tries; i++)
