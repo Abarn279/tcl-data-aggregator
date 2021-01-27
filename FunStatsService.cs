@@ -263,6 +263,15 @@ namespace DataPuller
             champsPickedonce.ForEach(x => sb.AppendLine($"{x.ChampName}: {x.PlayerName}"));
             sb.AppendLine();
 
+            // Champs only picked once
+            var allBlueSide = gameRecords.Where(x => x.Side == Enums.Side.Blue).ToList();
+            var blueSideWinrate = allBlueSide
+                .Where(x => x.Outcome == Enums.Outcome.Victory)
+                .Count() / (double)allBlueSide.Count;
+
+            sb.AppendLine($"Blue Side Winrate: {blueSideWinrate * 100}%");
+            sb.AppendLine();
+
             await File.WriteAllTextAsync(outputPath, sb.ToString());
         }
     }

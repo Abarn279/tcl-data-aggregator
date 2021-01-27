@@ -22,6 +22,9 @@ namespace DataPuller
             if (string.IsNullOrWhiteSpace(outputPrefix)) throw new Exception("Out file prefix missing from config");
             var funStatsPath = ConfigurationManager.AppSettings.Get("FunStatsTxtFileOutputPath");
             if (string.IsNullOrWhiteSpace(funStatsPath)) throw new Exception("Fun stats path missing from config");
+            if (!int.TryParse(ConfigurationManager.AppSettings.Get("NumGames"), out int numgames))
+                throw new Exception("Must include number of games in config");
+            
 
             // Services
             var api = RiotApi.GetDevelopmentInstance(apiKey);
@@ -37,7 +40,7 @@ namespace DataPuller
             else
             {
                 // Get metadata from local file
-                var matchMetadata = wbService.GetMatchMetadata(inputFile)
+                var matchMetadata = wbService.GetMatchMetadata(inputFile, numgames)
                     .OrderBy(x => x.Week)
                         .ThenBy(x => x.Day)
                             .ThenBy(x => x.GameNumber)
@@ -68,7 +71,7 @@ namespace DataPuller
 
             // Do fun stats
             var fsService = new FunStatsService();
-            await fsService.WriteFunStatsFile(tclRecords.GameRecords, tclRecords.PlayerGameRecords, funStatsPath);
+            await fsService.WriteFunStatsFile(tclRecords.GameRecords, tclRecords.PlayerGameRecords, funStatsPath, 15);
         }
 
         static void SetCachedData(string path, TCLRecords records)

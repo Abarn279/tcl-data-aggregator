@@ -20,7 +20,7 @@ namespace DataPuller
         public DataService(RiotApi api)
         {
             _riotApi = api;
-            _champs = _riotApi.StaticData.Champions.GetAllAsync("10.18.1").Result;
+            _champs = _riotApi.StaticData.Champions.GetAllAsync("11.1.1").Result;
         }
 
         public async Task<List<GameRecord>> GetGameRecords(List<MatchMetadata> matchMetadata)

@@ -236,7 +236,7 @@ public class WorkbookService
         }
     }
 
-    public IList<MatchMetadata> GetMatchMetadata(string metadataFilePath)
+    public IList<MatchMetadata> GetMatchMetadata(string metadataFilePath, int numRecords)
     {
         XSSFWorkbook wbr;
         using (FileStream file = new FileStream(metadataFilePath, FileMode.Open, FileAccess.Read))
@@ -246,7 +246,7 @@ public class WorkbookService
 
         var sheet = wbr.GetSheetAt(0);
         var md = new List<MatchMetadata>();
-        for (int rowInd = 1; rowInd <= sheet.LastRowNum; rowInd++)
+        for (int rowInd = 1; rowInd <= numRecords; rowInd++)
         {
             var row = sheet.GetRow(rowInd);
             md.Add(new MatchMetadata
