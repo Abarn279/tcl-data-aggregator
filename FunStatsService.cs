@@ -103,6 +103,34 @@ namespace DataPuller
             highestAvgGold.ForEach(x => sb.AppendLine($"{x.Name}: {x.AvgGoldMin}"));
             sb.AppendLine();
 
+            // Highest Avg Vision Score / Min
+            var highestAvgVisionScore = playerRecordsByPlayer
+                .Select(x => new
+                {
+                    Name = x.Key,
+                    AvgVision = x.Average(y => y.VisionScore / y.FractionalMinutes)
+                })
+                .OrderByDescending(x => x.AvgVision)
+                .Take(take)
+                .ToList();
+            sb.AppendLine($"omniscient (Highest vision score per minute):");
+            highestAvgVisionScore.ForEach(x => sb.AppendLine($"{x.Name}: {x.AvgVision}"));
+            sb.AppendLine();
+
+            // lowest Avg Vision Score / Min
+            var lowestAvgVisionScore = playerRecordsByPlayer
+                .Select(x => new
+                {
+                    Name = x.Key,
+                    AvgVision = x.Average(y => y.VisionScore / y.FractionalMinutes)
+                })
+                .OrderBy(x => x.AvgVision)
+                .Take(take)
+                .ToList();
+            sb.AppendLine($"Not even a ward (Lowest vision score per minute):");
+            lowestAvgVisionScore.ForEach(x => sb.AppendLine($"{x.Name}: {x.AvgVision}"));
+            sb.AppendLine();
+
             // Most CC time / min
             var highestCCTime = playerRecordsByPlayer
                 .Select(x => new
@@ -251,7 +279,7 @@ namespace DataPuller
 
             // Champs only picked once
             var champsPickedonce = playerRecordsByChampion
-                .Where(x => x.Count() == 1)
+                .Where(x => x.All(y => y.Player == x.First().Player))
                 .Select(x => new
                 {
                     ChampName = x.First().Champion,
@@ -259,7 +287,7 @@ namespace DataPuller
                 })
                 .OrderBy(x => x.ChampName)
                 .ToList();
-            sb.AppendLine($"Pocket picks (Champs picked once):");
+            sb.AppendLine($"Pocket picks (Champs picked by only one player):");
             champsPickedonce.ForEach(x => sb.AppendLine($"{x.ChampName}: {x.PlayerName}"));
             sb.AppendLine();
 
