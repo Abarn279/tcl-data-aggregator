@@ -2,6 +2,7 @@ bin
 obj
 Data/TCL_Data*.xls
 Data/Fun_Stats.txt
+Data/*.html
 App.config
 cache.dat
 .vscode

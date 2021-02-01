@@ -22,6 +22,8 @@ namespace DataPuller
             if (string.IsNullOrWhiteSpace(outputPrefix)) throw new Exception("Out file prefix missing from config");
             var funStatsPath = ConfigurationManager.AppSettings.Get("FunStatsTxtFileOutputPath");
             if (string.IsNullOrWhiteSpace(funStatsPath)) throw new Exception("Fun stats path missing from config");
+            var playerStatsPath = ConfigurationManager.AppSettings.Get("PlayerStatsTxtFileOutputPath");
+            if (string.IsNullOrWhiteSpace(playerStatsPath)) throw new Exception("Player stats path missing from config");
             if (!int.TryParse(ConfigurationManager.AppSettings.Get("NumGames"), out int numgames))
                 throw new Exception("Must include number of games in config");
             
@@ -72,6 +74,9 @@ namespace DataPuller
             // Do fun stats
             var fsService = new FunStatsService();
             await fsService.WriteFunStatsFile(tclRecords.GameRecords, tclRecords.PlayerGameRecords, funStatsPath, 15);
+
+            var pService = new StatsByPlayerService();
+            await pService.WriteStatsByPlayerFile(tclRecords.PlayerGameRecords, playerStatsPath);
         }
 
         static void SetCachedData(string path, TCLRecords records)
