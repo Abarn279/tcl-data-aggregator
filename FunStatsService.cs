@@ -75,6 +75,30 @@ namespace DataPuller
             highestAverageDMG.ForEach(x => sb.AppendLine($"{x.Name}: {x.AvgDMG}"));
             sb.AppendLine();
 
+            var highestKP = playerRecordsByPlayer
+                .Select(x =>
+                {
+                    var allMyParticipation = 0;
+                    var allTeamKills = 0;
+                    foreach (var game in x)
+                    {
+                        allTeamKills += playerGameRecords.Where(y => y.GameID == game.GameID && y.Team == game.Team).Sum(y => y.Kill);
+                        allMyParticipation += game.Kill + game.Assist;
+                    }
+
+                    return new
+                    {
+                        Name = x.Key,
+                        AvgKP = (double)allMyParticipation / allTeamKills * 100
+                    };
+                })
+                .OrderByDescending(x => x.AvgKP)
+                .Take(take)
+                .ToList();
+            sb.AppendLine($"Everywhere at once (Highest KP)");
+            highestKP.ForEach(x => sb.AppendLine($"{x.Name}: {x.AvgKP}%"));
+            sb.AppendLine();
+ 
             // Highest Avg CS / Min
             var highestAverageCS = playerRecordsByPlayer
                 .Select(x => new

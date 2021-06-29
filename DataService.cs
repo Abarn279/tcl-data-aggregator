@@ -20,7 +20,7 @@ namespace DataPuller
         public DataService(RiotApi api)
         {
             _riotApi = api;
-            _champs = _riotApi.StaticData.Champions.GetAllAsync("11.1.1").Result;
+            _champs = _riotApi.StaticData.Champions.GetAllAsync("11.12.1").Result;
         }
 
         public async Task<List<GameRecord>> GetGameRecords(List<MatchMetadata> matchMetadata)
@@ -93,7 +93,7 @@ namespace DataPuller
                         role: _positions[pnum % 5],
                         champion: _champs.Keys[participant.ChampionId],
                         pickOrder: null,
-                        ban: _champs.Keys[myTeam.Bans[pnum % 5].ChampionId],
+                        ban: myTeam.Bans.Count >= (pnum % 5 + 1) ? _champs.Keys[myTeam.Bans[pnum % 5].ChampionId] : "",
                         banTarget: "",
                         laneOpponent: laneOpponentName,
                         laneOpponentChampion: _champs.Keys[match.Participants[laneOpponentPnum].ChampionId],
@@ -128,6 +128,7 @@ namespace DataPuller
         private async Task<T> Retry<T>(Func<Task<T>> func, int tries)
         {
             Exception exception = null;
+            int sleep = 500;
             for (var i = 0; i < tries; i++)
             {
                 try
@@ -137,7 +138,8 @@ namespace DataPuller
                 catch (Exception e)
                 {
                     exception = e;
-                    Thread.Sleep(500);
+                    Thread.Sleep(sleep);
+                    sleep += 500;
                 }
             }
 

@@ -73,7 +73,7 @@ namespace DataPuller
 
             // Do fun stats
             var fsService = new FunStatsService();
-            await fsService.WriteFunStatsFile(tclRecords.GameRecords, tclRecords.PlayerGameRecords, funStatsPath, 15);
+            await fsService.WriteFunStatsFile(tclRecords.GameRecords, tclRecords.PlayerGameRecords, funStatsPath, 10);
 
             var pService = new StatsByPlayerService();
             await pService.WriteStatsByPlayerFile(tclRecords.PlayerGameRecords, playerStatsPath);
