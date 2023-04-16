@@ -6,12 +6,10 @@ namespace DataPuller.Records
     [Serializable]
     public class GameRecord
     {
-        public GameRecord(DateTime matchDate, TimeSpan gameTime, string matchId, long gameId, int week, int day, int gameNumber, string teamName, Side side, string opponent, Outcome outcome, int totalCS, int totalGold, int totalLevels, bool firstBlood, bool firstTower, bool firstInhibitor, bool firstRiftHerald, bool firstBaron, int dragonKills, int baronKills, int riftHeraldKills)
+        public GameRecord(TimeSpan gameTime, string matchId, int week, int day, int gameNumber, string teamName, Side side, string opponent, Outcome outcome, int totalCS, int totalGold, int totalLevels, bool firstBlood, bool firstTower, int inhibitorsKilled, int dragonKills, int baronKills)
         {
-            MatchDate = matchDate;
             GameTime = gameTime;
             MatchId = matchId;
-            GameId = gameId;
             Week = week;
             Day = day;
             GameNumber = gameNumber;
@@ -24,15 +22,11 @@ namespace DataPuller.Records
             TotalLevels = totalLevels;
             FirstBlood = firstBlood;
             FirstTower = firstTower;
-            FirstInhibitor = firstInhibitor;
-            FirstRiftHerald = firstRiftHerald;
-            FirstBaron = firstBaron;
+            InhibitorsKilled = inhibitorsKilled;
             DragonKills = dragonKills;
             BaronKills = baronKills;
-            RiftHeraldKills = riftHeraldKills;
         }
 
-        public DateTime MatchDate { get; set; }
         public TimeSpan GameTime { get; set; }
         public double FractionalMinutes => GameTime.TotalMinutes;
         public string MatchId { get; set; }
@@ -47,14 +41,10 @@ namespace DataPuller.Records
         public int TotalCS { get; set; }
         public int TotalGold { get; set; }
         public int TotalLevels { get; set; }
-        public double CSEfficiency => this.TotalCS / this.FractionalMinutes;
         public bool FirstBlood { get; set; }
         public bool FirstTower { get; set; }
-        public bool FirstInhibitor { get; set; }
-        public bool FirstRiftHerald { get; set; }
-        public bool FirstBaron { get; set; }
+        public int InhibitorsKilled { get; set; }
         public int DragonKills { get; set; }
         public int BaronKills { get; set; }
-        public int RiftHeraldKills { get; set; }
     }
 }

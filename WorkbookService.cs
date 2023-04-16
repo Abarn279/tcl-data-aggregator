@@ -51,7 +51,6 @@ public class WorkbookService
         var header2 = sheet.CreateRow(1);
         FillRow(header2, new CellValue[]
             {
-                new CellValue("Match Date"),
                 new CellValue("Gametime"),
                 new CellValue("Fractional Minutes"),
                 new CellValue("Match ID"),
@@ -66,15 +65,10 @@ public class WorkbookService
                 new CellValue("Total CS"),
                 new CellValue("Total Gold"),
                 new CellValue("Total Levels"),
-                new CellValue("CS Efficiency"),
                 new CellValue("First Blood"),
                 new CellValue("First Tower"),
-                new CellValue("First Inhibitor"),
-                new CellValue("First Rift Herald"),
-                new CellValue("First Baron"),
                 new CellValue("Dragon Kills"),
                 new CellValue("Baron Kills"),
-                new CellValue("Rift Herald Kills")
             }, _blueHeaderStyle);
 
         var rowInd = 2;
@@ -84,7 +78,6 @@ public class WorkbookService
 
             FillRow(row, new CellValue[]
             {
-                    new CellValue(gr.MatchDate.ToShortDateString()),
                     new CellValue(gr.GameTime.ToString("mm\\:ss")),
                     new CellValue(gr.FractionalMinutes.ToString("N2"), CellType.Numeric),
                     new CellValue(gr.MatchId),
@@ -99,15 +92,10 @@ public class WorkbookService
                     new CellValue(gr.TotalCS, CellType.Numeric),
                     new CellValue(gr.TotalGold, CellType.Numeric),
                     new CellValue(gr.TotalLevels, CellType.Numeric),
-                    new CellValue(gr.CSEfficiency, CellType.Numeric),
                     new CellValue(gr.FirstBlood.ToInt(), CellType.Boolean),
                     new CellValue(gr.FirstTower.ToInt(), CellType.Boolean),
-                    new CellValue(gr.FirstInhibitor.ToInt(), CellType.Boolean),
-                    new CellValue(gr.FirstRiftHerald.ToInt(), CellType.Boolean),
-                    new CellValue(gr.FirstBaron.ToInt(), CellType.Boolean),
                     new CellValue(gr.DragonKills, CellType.Numeric),
                     new CellValue(gr.BaronKills, CellType.Numeric),
-                    new CellValue(gr.RiftHeraldKills.ToString(), CellType.Numeric)
             });
 
             rowInd++;
@@ -137,9 +125,7 @@ public class WorkbookService
                 new CellValue("Player"),
                 new CellValue("Role"),
                 new CellValue("Champion"),
-                new CellValue("Pick Order"),
                 new CellValue("Ban"),
-                new CellValue("Ban Target"),
                 new CellValue("Lane Opponent"),
                 new CellValue("Lane Opponent Champion"),
                 new CellValue("Outcome"),
@@ -183,9 +169,7 @@ public class WorkbookService
                     new CellValue(pgr.Player),
                     new CellValue(pgr.Role),
                     new CellValue(pgr.Champion),
-                    new CellValue(pgr.PickOrder),
                     new CellValue(pgr.Ban),
-                    new CellValue(pgr.BanTarget),
                     new CellValue(pgr.LaneOpponent),
                     new CellValue(pgr.LaneOpponentChampion),
                     new CellValue(pgr.Outcome),
@@ -236,7 +220,7 @@ public class WorkbookService
         }
     }
 
-    public IList<MatchMetadata> GetMatchMetadata(string metadataFilePath, int numRecords)
+    public IList<MatchMetadata> GetMatchMetadata(string metadataFilePath)
     {
         XSSFWorkbook wbr;
         using (FileStream file = new FileStream(metadataFilePath, FileMode.Open, FileAccess.Read))
@@ -246,21 +230,26 @@ public class WorkbookService
 
         var sheet = wbr.GetSheetAt(0);
         var md = new List<MatchMetadata>();
-        for (int rowInd = 1; rowInd <= numRecords; rowInd++)
+
+        var rowInd = 1;
+        var row = sheet.GetRow(rowInd);
+        while (row.GetCell(0) != null && row.GetCell(0).CellType != CellType.Blank)
         {
-            var row = sheet.GetRow(rowInd);
             md.Add(new MatchMetadata
             {
                 GameNumber = (int)row.GetCell(0).NumericCellValue,
                 MatchKey = row.GetCell(1).StringCellValue,
                 Week = (int)row.GetCell(2).NumericCellValue,
                 Day = (int)row.GetCell(3).NumericCellValue,
-                GameId = (long)row.GetCell(4).NumericCellValue,
+                GameId = row.GetCell(4).StringCellValue,
                 BlueTeamName = row.GetCell(5).StringCellValue,
                 RedTeamName = row.GetCell(6).StringCellValue,
                 BlueTeamPlayers = row.GetCell(7).StringCellValue,
                 RedTeamPlayers = row.GetCell(8).StringCellValue
             });
+
+            rowInd++;
+            row = sheet.GetRow(rowInd);
         }
 
         return md;

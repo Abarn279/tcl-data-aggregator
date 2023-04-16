@@ -8,7 +8,7 @@ public class MatchMetadata
 
     public int Day { get; set; }
 
-    public long GameId { get; set; }
+    public string GameId { get; set; }
 
     public string BlueTeamName { get; set; }
 
